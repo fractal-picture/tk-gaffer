@@ -64,8 +64,10 @@ logger.debug("Loading engine module...")
 
 # detects if the application has be run in batch mode or not
 def is_batch_mode():
-    return False
+    # return False
     # TODO DGH
+    return "GafferUI" not in sys.modules
+
 
 
 # logging functionality
